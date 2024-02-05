@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <h1>Hola!</h1>
-  </div>
+  <Header />
 </template>
 <script>
-export default {};
+import Header from "@/components/header/Header.vue";
+
+export default {
+  components: { Header },
+};
 </script>
 <style lang=""></style>
