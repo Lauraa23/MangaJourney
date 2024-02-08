@@ -1,10 +1,23 @@
 <template>
   <nav class="navigationBar">
-    <ul class="navigationBar__list">
-      <li class="navigationBar__list__items" v-for="(link, index) in links" :key="index">
-        <router-link class="navigationBar__list__items__links" :to="link.to">{{ link.text }}</router-link>
-      </li>
-    </ul>
+    <div class="navigationBar__container">
+      <router-link to="/home" class="navigationBar__container__logo">
+        <span class="navigationBar__container__logo__text">Manga Journey</span>
+      </router-link>
+      <ul class="navigationBar__container__list">
+        <li
+          v-for="(link, index) in links"
+          :key="index"
+          class="navigationBar__container__list__item"
+        >
+          <router-link
+            :to="link.to"
+            class="navigationBar__container__list__item__link"
+            >{{ link.text }}</router-link
+          >
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 <script>
@@ -17,5 +30,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped src="./_NavBar.scss">
-</style>
+<style lang="scss" scoped src="./_NavBar.scss"></style>

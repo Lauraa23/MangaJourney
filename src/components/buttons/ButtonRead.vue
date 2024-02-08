@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <h2>Mangas</h2>
-  </div>
+  
 </template>
 <script>
 export default {};
 </script>
-<style lang=""></style>
+<style scoped lang="scss">
+
+</style>
