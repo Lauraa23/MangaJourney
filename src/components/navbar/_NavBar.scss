@@ -17,11 +17,7 @@
         font-family: "Bangers", system-ui;
         font-size: 1.8rem;
         color: white;
-        filter: drop-shadow(0 2px 5px #000000b3);
-
-        &:hover {
-          text-shadow: 2px 2px 5px #181420;
-        }
+        text-shadow: 2px 2px 5px #000000;
       }
     }
     &__list {

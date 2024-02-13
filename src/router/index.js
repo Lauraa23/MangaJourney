@@ -7,12 +7,12 @@ const routes = [
   {
     path: "/home",
     component: HomeView,
-    name: "home",
+    name: "Home",
   },
   {
     path: "/mangas",
     component: OneManga,
-    name: "manga",
+    name: "OneManga",
   },
 ];
 
