@@ -10,13 +10,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.15rem;
+    padding: 0.6rem;
     &__logo {
       text-decoration: none;
       &__text {
         font-family: "Bangers", system-ui;
         font-size: 1.8rem;
         color: white;
+        filter: drop-shadow(0 2px 5px #000000b3);
 
         &:hover {
           text-shadow: 2px 2px 5px #181420;

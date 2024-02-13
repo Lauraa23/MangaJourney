@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <h2>Mangas</h2>
-  </div>
   <div class="container">
     <div class="container__left">
       <div class="container__left__spam">Spam!</div>
@@ -16,8 +13,6 @@
   </div>
 </template>
 <script>
-export default {
-  name: "OneManga",
-};
+export default {};
 </script>
-<style lang="scss" scoped src="./_OneManga.scss"></style>
+<style lang="scss" scoped src="./_HomeView.scss"></style>

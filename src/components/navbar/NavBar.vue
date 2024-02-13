@@ -5,15 +5,20 @@
         <span class="navigationBar__container__logo__text">Manga Journey</span>
       </router-link>
       <ul class="navigationBar__container__list">
-        <li
-          v-for="(link, index) in links"
-          :key="index"
-          class="navigationBar__container__list__item"
-        >
+        <li class="navigationBar__container__list__item">
           <router-link
-            :to="link.to"
             class="navigationBar__container__list__item__link"
-            >{{ link.text }}</router-link
+            to="/home"
+            style="text-decoration: none; color: inherit"
+            >Home</router-link
+          >
+        </li>
+        <li class="navigationBar__container__list__item">
+          <router-link
+            class="navigationBar__container__list__item__link"
+            to="/mangas"
+            style="text-decoration: none; color: inherit"
+            >Mangas</router-link
           >
         </li>
       </ul>
@@ -21,13 +26,6 @@
   </nav>
 </template>
 <script>
-export default {
-  props: {
-    links: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+export default {};
 </script>
 <style lang="scss" scoped src="./_NavBar.scss"></style>
