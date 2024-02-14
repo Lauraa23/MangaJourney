@@ -11,13 +11,8 @@
       <div class="container__right__spam">Spam!</div>
     </div>
   </div>
-  <previous-button />
-  <next-button />
 </template>
 <script>
-import PreviousButton from '@/components/buttons/PreviousButton.vue';
-import NextButton from '@/components/buttons/NextButton.vue';
-export default {
-  components: { PreviousButton, NextButton },};
+export default {};
 </script>
 <style lang="scss" scoped src="./_HomeView.scss"></style>

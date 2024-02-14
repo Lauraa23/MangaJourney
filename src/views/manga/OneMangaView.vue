@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h2>Mangas</h2>
+  <div class="buttons">
+    <previous-button />
+    <next-button />
   </div>
   <div class="container">
     <div class="container__left">
@@ -16,8 +17,11 @@
   </div>
 </template>
 <script>
+import PreviousButton from "@/components/buttons/PreviousButton.vue";
+import NextButton from "@/components/buttons/NextButton.vue";
 export default {
   name: "OneManga",
+  components: { PreviousButton, NextButton },
 };
 </script>
 <style lang="scss" scoped src="./_OneManga.scss"></style>
