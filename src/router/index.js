@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "@/views/home/HomeView.vue";
-import OneManga from "@/views/manga/OneManga.vue";
+import OneManga from "@/views/manga/OneMangaView.vue";
 
 const routes = [
   {
