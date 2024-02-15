@@ -17,6 +17,7 @@
     align-items: center;
     background-color: yellow;
     width: 70%;
+    text-decoration: none;
   }
   &__spam-container-left {
     display: flex;
@@ -25,5 +26,6 @@
   &__mangas,
   &__spam {
     margin-bottom: 10px;
+    text-decoration: none;
   }
 }

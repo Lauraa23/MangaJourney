@@ -1,11 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "@/views/home/HomeView.vue";
-<<<<<<< HEAD
-import OneManga from "@/views/manga/OneMangaView.vue";
-=======
 import AllMangasView from "@/views/manga/AllMangasView.vue";
->>>>>>> 2f446a9 (new view)
+import OneMangaView from "@/views/manga/OneMangaView.vue";
 
 const routes = [
   {
@@ -17,6 +14,11 @@ const routes = [
     path: "/mangas",
     component: AllMangasView,
     name: "AllMangas",
+  },
+  {
+    path: "/onemanga",
+    component: OneMangaView,
+    name: "OneManga",
   },
 ];
 
