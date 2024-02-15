@@ -1,0 +1,29 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: solid;
+  margin: 0;
+  &__spam-container-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__mangas-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    width: 70%;
+  }
+  &__spam-container-left {
+    display: flex;
+    flex-direction: column;
+  }
+  &__mangas,
+  &__spam {
+    margin-bottom: 10px;
+  }
+}

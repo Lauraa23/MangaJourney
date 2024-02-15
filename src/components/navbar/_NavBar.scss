@@ -26,15 +26,16 @@
       margin: 0;
       &__item {
         display: inline-block;
-        margin-left: 1rem;
+        margin-left: 1.8rem;
+        border: none;
+
+        &:hover {
+          border: 3px double #00fffc;
+        }
         &__link {
           text-decoration: none;
           color: white;
           font-family: "Fira Sans", sans-serif;
-
-          &:hover {
-            text-decoration: underline;
-          }
         }
       }
     }
