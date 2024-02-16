@@ -1,8 +1,5 @@
 <template>
-  <div class="buttons">
-    <previous-button />
-    <next-button />
-  </div>
+  <h1>{{ routeId }}</h1>
   <div class="container">
     <div class="container__left">
       <div class="container__left__spam">Spam!</div>
@@ -17,11 +14,17 @@
   </div>
 </template>
 <script>
-import PreviousButton from "@/components/buttons/PreviousButton.vue";
-import NextButton from "@/components/buttons/NextButton.vue";
 export default {
   name: "OneManga",
-  components: { PreviousButton, NextButton },
+
+  data() {
+    return {
+      routeId: null,
+    };
+  },
+  mounted() {
+    this.routeId = this.$route.params.name;
+  },
 };
 </script>
 <style lang="scss" scoped src="./_OneManga.scss"></style>
