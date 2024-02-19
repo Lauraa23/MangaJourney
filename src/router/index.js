@@ -7,6 +7,10 @@ import OneMangaView from "@/views/manga/OneMangaView.vue";
 
 const routes = [
   {
+    path: "/",
+    redirect: "/home",
+  },
+  {
     path: "/home",
     component: HomeView,
     name: "Home",

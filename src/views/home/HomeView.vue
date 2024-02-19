@@ -1,5 +1,4 @@
 <template>
-  <h1>Hola</h1>
   <div class="container">
     <div class="container__left">
       <div class="container__left__spam">Spam!</div>

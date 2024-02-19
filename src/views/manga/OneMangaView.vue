@@ -17,7 +17,9 @@
       </div>
       <div class="container__manga__episodes">
         <ul>
-          <li class="container__manga__episodes__item">Episodio 1</li>
+          <li class="container__manga__episodes__item" @click="goToOneEpisode">
+            Episodio 1
+          </li>
 
           <li class="container__manga__episodes__item">Episodio 2</li>
 
@@ -57,7 +59,11 @@ export default {
       routeId: null,
     };
   },
-
+  methods: {
+    goToOneEpisode() {
+      this.$router.push("/onepagemanga");
+    },
+  },
   mounted() {
     this.routeId = this.$route.params.name;
   },
