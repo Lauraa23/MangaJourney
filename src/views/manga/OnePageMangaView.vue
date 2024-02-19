@@ -35,7 +35,5 @@ export default {
     justify-content: space-evenly;
     width: 100%;
   }
-  &__image {
-  }
 }
 </style>
