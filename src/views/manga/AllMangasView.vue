@@ -8,7 +8,7 @@
 
     <div class="parent__mangas-container">
       <div class="parent__mangas">
-        <router-link to="/onepagemanga">Mangas</router-link>
+        <router-link to="/onemanga/:name">Mangas</router-link>
       </div>
       <div class="parent__mangas">Mangas</div>
       <div class="parent__mangas">Mangas</div>
