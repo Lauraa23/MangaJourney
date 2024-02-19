@@ -22,7 +22,7 @@ const routes = [
     name: "OneManga",
   },
   {
-    path: "/onepagemanga/:name/:id",
+    path: "/onepagemanga",
     component: OnePageMangaView,
     name: "OnePageManga",
   },

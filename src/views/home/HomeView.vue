@@ -6,7 +6,7 @@
       <div class="container__left__spam">Spam!</div>
     </div>
     <div class="container__images">
-      <AdvancedImage :cld-img="jujutsuImage" />
+      <AdvancedImage :cld-img="jujutsu.image" @click="goToOneManga" />
       <AdvancedImage :cld-img="chainsawImage" />
     </div>
     <div class="container__right">
@@ -32,7 +32,19 @@ export default {
     AdvancedImage,
   },
   data() {
-    return { jujutsuImage, chainsawImage };
+    return {
+      chainsawImage,
+      jujutsu: {
+        name: "JujutsuKaisen",
+        epNum: 0,
+        image: jujutsuImage,
+      },
+    };
+  },
+  methods: {
+    goToOneManga() {
+      this.$router.push(`/onemanga/${this.jujutsu.name}`);
+    },
   },
 };
 </script>
